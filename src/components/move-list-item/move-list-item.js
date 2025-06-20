@@ -1,13 +1,17 @@
 import "../move-list-item/move-list-item.css";
 
-const MoveListItem = () => {
+const MoveListItem = ({ name, viewers, favorite }) => {
   return (
-    <li className="list-group-item d-flex justify-content-between">
-      <span className="list-group-item-label">peaky blinders</span>
+    <li
+      className={`list-group-item d-flex justify-content-between fovorite ${
+        favorite && "favorite"
+      }`}
+    >
+      <span className="list-group-item-label">{name}</span>
       <input
         type="number"
         className="list-group-item-input"
-        defaultValue="989"
+        defaultValue={viewers}
       />
       <div className="d-flex justify-content-between align-items-center">
         <button type="button" className="list-group-item btn-cookie btn-sm">

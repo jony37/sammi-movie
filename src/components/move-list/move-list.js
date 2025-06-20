@@ -1,12 +1,17 @@
-import '../move-list/move-list.css'
-import MoveListItem from '../move-list-item/move-list-item'
+import "../move-list/move-list.css";
+import MoveListItem from "../move-list-item/move-list-item";
 
-const MoveList = () => {
+const MoveList = ({data}) => {
   return (
-    <div className='move-list'>
-        <MoveListItem/>
-    </div>
-  )
-}
+    <ul className="move-list">
+      {
+        data.map(item => (          
+          <MoveListItem name = {item.name} viewers = {item.viewers} favorite = {item.favorite}/>
+          
+        ))
+      }
+    </ul>
+  );
+};
 
-export default MoveList
+export default MoveList;
