@@ -7,9 +7,9 @@ import MoveAddForm from "../movies-add-form/movies-add-form";
 
 function App() {
   const data = [
-    { name: "peaky blinders", viewers: 911, favorite: true},
-    { name: "game of thrones", viewers: 890989098, favorite: false},
-    { name: "breaking bad", viewers: 912323232321, favorite: false},
+    { name: "peaky blinders", viewers: 911, favorite: true, id: 1 },
+    { name: "game of thrones", viewers: 890989098, favorite: false, id: 2 },
+    { name: "breaking bad", viewers: 912323232321, favorite: false, id: 3 },
   ];
   return (
     <div className="app font-monospace">
@@ -20,7 +20,7 @@ function App() {
           <AppFilter />
         </div>
         <div className="">
-          <MoveList data={data}/>
+          <MoveList data={data} />
           <MoveAddForm />
         </div>
       </div>
