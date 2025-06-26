@@ -7,7 +7,7 @@ import MoveAddForm from "../movies-add-form/movies-add-form";
 
 function App() {
   const data = [
-    { name: "peaky blinders", viewers: 911, favorite: true, id: 1 },
+    { name: "peaky blinders", viewers: 911, favorite: false, id: 1 },
     { name: "game of thrones", viewers: 890989098, favorite: false, id: 2 },
     { name: "breaking bad", viewers: 912323232321, favorite: false, id: 3 },
   ];

@@ -7,7 +7,6 @@ const MoveList = ({data}) => {
       {
         data.map(item => (          
           <MoveListItem key={item.id} name = {item.name} viewers = {item.viewers} favorite = {item.favorite}/>
-
         ))
       }
     </ul>
